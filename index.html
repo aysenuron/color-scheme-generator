@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p>
+            Built by <a href="www.aysenuronaran.com" target="_blank">Ayşenur Onaran</a> as a Scrimba solo project.<br><br>Have fun!
+        </p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="input-section">
+                <form>
+                    <input id="color-selected" type="color">
+                    <select name="modes" id="mode-picker">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome Dark</option>
+                        <option value="monochrome-light">Monochrome Light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic Complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                    <button type="submit">Get color scheme</button>
+                </form>
+            </div>
+            <div class="scheme-colors-section">
+                <div class="scheme-colors" id="color-1"></div>
+                <div class="scheme-colors" id="color-2"></div>
+                <div class="scheme-colors" id="color-3"></div>
+                <div class="scheme-colors" id="color-4"></div>
+                <div class="scheme-colors" id="color-5"></div>
+            </div>
+            <div class="scheme-codes-section">
+                <div class="scheme-codes" id="code-1"></div>
+                <div class="scheme-codes" id="code-2"></div>
+                <div class="scheme-codes" id="code-3"></div>
+                <div class="scheme-codes" id="code-4"></div>
+                <div class="scheme-codes" id="code-5"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
